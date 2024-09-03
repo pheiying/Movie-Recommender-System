@@ -10,7 +10,11 @@
 
 ## Introduction
 
+
 ## Graphical User Interface (GUI)
+A simple GUI for a movie recommender system is created using Tkinter, allowing users to interact with the recommendation engine easily. Users can enter their user ID and select their preferred recommendation technique. Upon submission, the GUI processes the input and displays a list of recommended movies tailored to the user's tastes.
+
+The code for the GUI is located at `recommender_system_GUI.py` within the repository.
 
 ## Methodology
 
@@ -18,15 +22,15 @@
 
 The "[ml-latest-small](./ml-latest-small)" dataset presents a comprehensive collection of movie ratings and tags, amassed from a diverse user base. The dataset comprises
 
-- **9,742 movies**, encompassing various genres and time periods.
+- **9,742 movies**, encompassing various genres and periods.
 - **610 users**, who have actively participated in rating movies and tagging content.
 - **1,589 unique tags**, indicating the varied preferences and tastes of the user base.
 - A substantial number of **ratings**, amounting to **100,836**, which illustrates the extensive engagement of users with the platform.
 
 ### Recommendation Techniques
-1. **Content-Based Filtering:**
-2. **Memory-Based Collaborative Filtering:**
-3. **Model-Based Collaborative Filtering:**
+1. **Content-Based Filtering:** Recommends items based on user preferences and item features.
+2. **Memory-Based Collaborative Filtering:** Uses user-item interactions to suggest similar items or users.
+3. **Model-Based Collaborative Filtering:** Utilises machine learning models to predict user preferences based on past data.
 
 ### Evaluation Method
 1. **RMSE (Root Mean Square Error):** RMSE quantifies the average predictive error between actual and predicted ratings, with lower values indicating better accuracy.
@@ -36,7 +40,6 @@ The "[ml-latest-small](./ml-latest-small)" dataset presents a comprehensive coll
 5. **Novelty:** Novelty evaluates the uniqueness and diversity of recommendations to introduce users to unfamiliar items.
 6. **Recall @k:** Recall @ k quantifies the fraction of relevant items recommended within the top-k list.
 7. **Precision@k:** Precision @ k measures the accuracy of relevant items within the top-k recommendations.
-
 
 ## Results
 
