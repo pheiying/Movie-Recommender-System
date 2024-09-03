@@ -1,5 +1,7 @@
 # Movie-Recommender-System
 
+A system incorporating collaborative, content-based, and hybrid techniques to offer personalised movie recommendations, thereby improving the overall user experience.
+
 ## Table Of Contents
 - [Introduction](#introduction)
 - [Graphical User Interface (GUI)](#graphical-user-interface)
@@ -10,6 +12,7 @@
 
 ## Introduction
 
+This project develops a movie recommender system that leverages collaborative, content-based, and hybrid filtering techniques to deliver personalized movie recommendations. By analysing user interactions and movie features and combining multiple recommendation strategies, the system aims to enhance the user experience by suggesting movies that align with individual preferences.
 
 ## Graphical User Interface (GUI)
 A simple GUI for a movie recommender system is created using Tkinter, allowing users to interact with the recommendation engine easily. Users can enter their user ID and select their preferred recommendation technique. Upon submission, the GUI processes the input and displays a list of recommended movies tailored to the user's tastes.
@@ -46,7 +49,7 @@ The "[ml-latest-small](./ml-latest-small)" dataset presents a comprehensive coll
 ### Root Mean Squared Error (RSME)
 **User-based** and **Item-based** have the lowest RMSE, suggesting they are the most accurate in predicting exact ratings. 
 
-**Year-based** and **Weighted year based** have the highest RMSE, implying they might not be as accurate in predicting ratings.
+**Year-based** and **Weighted year-based** have the highest RMSE, implying they might not be as accurate in predicting ratings.
 
 ### Mean Absolute Error (MAE)
 **User-based** and **item-based** excel, indicating they are adept at accurately predicting ratings. 
@@ -59,7 +62,7 @@ The "[ml-latest-small](./ml-latest-small)" dataset presents a comprehensive coll
 **NCF** model an**User-based** have very low hit rates, suggesting users might not find their recommendations as engaging.
 
 ### Coverage
-Almost all recommenders have a coverage of 1.0000 or near to 1.o. This means they can potentially recommend any movie in the dataset
+Almost all recommenders have a coverage of 1.0000 or near to 1. This means they can potentially recommend any movie in the dataset
 
 **NCF model** has an unusually low coverage of 0.0001 or 0.01%. This means it can only recommend a tiny fraction of the available items.      
 
@@ -71,12 +74,12 @@ The **NCF model** stands out with an extraordinarily high novelty score, suggest
 ### Precision at K (P@k)
 **SVD** dominates, implying that a high proportion of its top recommendations are items users have interacted with. 
 
-The **NCF model** has the lowest precision, suggesting its top recommendations are rarely hits with users.
+The **NCF model** has the lowest precision, suggesting its top recommendations are rarely hit with users.
 
 ###  Recall at K (R@k)
 **SVD** filtering excels, suggesting it's able to capture most of the items users have interacted with in its top recommendations.
 
-**User-based** and **NCF model** filtering have very low recall, indicating they miss out on many movies users would interact with.
+**User-based** and **NCF model** filtering have a very low recall, indicating they miss out on many movies users would interact with.
 
 ## License
 
