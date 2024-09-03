@@ -47,19 +47,19 @@ The "[ml-latest-small](./ml-latest-small)" dataset presents a comprehensive coll
 ## Results
 
 ### Root Mean Squared Error (RSME)
-**User-based** and **Item-based** have the lowest RMSE, suggesting they are the most accurate in predicting exact ratings. 
+- **User-based** and **Item-based** have the lowest RMSE, suggesting they are the most accurate in predicting exact ratings. 
 
-**Year-based** and **Weighted year-based** have the highest RMSE, implying they might not be as accurate in predicting ratings.
+- **Year-based** and **Weighted year-based** have the highest RMSE, implying they might not be as accurate in predicting ratings.
 
 ### Mean Absolute Error (MAE)
-**User-based** and **item-based** excel, indicating they are adept at accurately predicting ratings. 
+- **User-based** and **item-based** excel, indicating they are adept at accurately predicting ratings. 
 
-**Year-based** has the highest MAE, followed closely by combined content-based.
+- **Year-based** has the highest MAE, followed closely by combined content-based.
 
 ### Hit Rate
-**SVD** has an outstandingly high hit rate, implying it’s most effective at suggesting movies users will interact with. 
+- **SVD** has an outstandingly high hit rate, implying it’s most effective at suggesting movies users will interact with. 
 
-**NCF** model an**User-based** have very low hit rates, suggesting users might not find their recommendations as engaging.
+- **NCF** model an**User-based** have very low hit rates, suggesting users might not find their recommendations as engaging.
 
 ### Coverage
 Almost all recommenders have a coverage of 1.0000 or near to 1. This means they can potentially recommend any movie in the dataset
