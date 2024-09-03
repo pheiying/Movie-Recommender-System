@@ -62,24 +62,24 @@ The "[ml-latest-small](./ml-latest-small)" dataset presents a comprehensive coll
 - **NCF** model an**User-based** have very low hit rates, suggesting users might not find their recommendations as engaging.
 
 ### Coverage
-Almost all recommenders have a coverage of 1.0000 or near to 1. This means they can potentially recommend any movie in the dataset
+- Almost all recommenders have a coverage of 1.0000 or near to 1. This means they can potentially recommend any movie in the dataset
 
-**NCF model** has an unusually low coverage of 0.0001 or 0.01%. This means it can only recommend a tiny fraction of the available items.      
+- **NCF model** has an unusually low coverage of 0.0001 or 0.01%. This means it can only recommend a tiny fraction of the available items.      
 
 ### Novelty
-The **NCF model** stands out with an extraordinarily high novelty score, suggesting it recommends less popular items. 
+- The **NCF model** stands out with an extraordinarily high novelty score, suggesting it recommends less popular items. 
 
-**SVD** has the lowest novelty, implying it tends to suggest more popular or mainstream movies.
+- **SVD** has the lowest novelty, implying it tends to suggest more popular or mainstream movies.
 
 ### Precision at K (P@k)
-**SVD** dominates, implying that a high proportion of its top recommendations are items users have interacted with. 
+- **SVD** dominates, implying that a high proportion of its top recommendations are items users have interacted with. 
 
-The **NCF model** has the lowest precision, suggesting its top recommendations are rarely hit with users.
+- The **NCF model** has the lowest precision, suggesting its top recommendations are rarely hit with users.
 
 ###  Recall at K (R@k)
-**SVD** filtering excels, suggesting it's able to capture most of the items users have interacted with in its top recommendations.
+- **SVD** filtering excels, suggesting it's able to capture most of the items users have interacted with in its top recommendations.
 
-**User-based** and **NCF model** filtering have a very low recall, indicating they miss out on many movies users would interact with.
+- **User-based** and **NCF model** filtering have a very low recall, indicating they miss out on many movies users would interact with.
 
 ## License
 
